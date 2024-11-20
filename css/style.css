@@ -1,0 +1,44 @@
+*{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+nav {
+    display: flex;
+    background-color: orange;
+    padding: 0 50px;
+    height: 100px;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.logo
+{
+    margin-left: 200px;
+    width: 20%;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    gap: 70px;
+    justify-content: end;
+    margin-right: 200px;
+}
+
+li{
+    align-items: end;
+    justify-content: end;
+}
+
+.nav-buttons a{
+
+    color:brown;
+    text-decoration: none;
+}
+
