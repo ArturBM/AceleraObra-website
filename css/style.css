@@ -1,0 +1,57 @@
+@charset "ütf-8";
+
+/*CSS Document*/
+
+/*NavBar*/
+
+*{
+margin-right: 0;
+margin-left: 0;
+margin-bottom: 0;
+margin-top: 0;   
+}
+
+nav{
+background-color: black;
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 150px;
+padding: 0 60px;
+border-bottom: 3px solid #FFCD00;
+}
+
+.logo{
+color: white;
+width: 15%;
+margin-left: 150px;
+}
+
+.logo img{
+height: 500px;
+padding: 0;
+margin: 0;
+}
+
+.ButtonsNavBar{
+display: flex;
+flex-direction: row;
+list-style-type: none; 
+margin: 0;
+padding: 0;
+gap: 70px;
+justify-content: end;
+margin-right: 200px;
+}
+
+li{
+align-items: end;
+justify-content: end;
+}
+
+.ButtonsNavBar a{
+color:white;
+text-decoration: none;
+font-size: 25px;
+font-family: "Satoshi-Regular";
+}
