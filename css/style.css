@@ -56,6 +56,32 @@ li{
     text-decoration: underline;
 }
 
+/* Pagina Main */
+
+#main{
+    background-image: url('../img/LAMINA.png');
+    background-size: cover; 
+    background-position: center; 
+
+    height: 1000px;
+    width: auto;
+    color: #FFCD00;
+    display: flex;
+}
+
+#main article{
+    margin-top: 350px;
+    margin-left: 350px;
+}
+#main article h1
+{
+    font-size: 40px;
+}
+
+
+
+
+
 
 /* Fonte Satoshi */
 
