@@ -30,3 +30,19 @@ sliderSolutions.addEventListener('transitionend', function(){
         sliderSolutions.style.transition = 'all 0.5s'
     })
 })
+
+const faqQuestions = document.getElementsByClassName("faq-question")
+
+for(let i = 0; i < faqQuestions.length; i++)
+{
+    faqQuestions[i].addEventListener('click', function() {
+        this.classList.toggle("active")
+        answer = this.nextElementSibling
+        if (answer.style.maxHeight)
+        {
+            answer.style.maxHeight = null
+        } else {
+            answer.style.maxHeight = answer.scrollHeight + 'px'
+        }
+    })
+}

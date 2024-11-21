@@ -291,6 +291,14 @@ background-color:#FFCD00 ;
   justify-content: center;
   align-items: center;
 }
+
+/* FAQ */
+.faq-answer
+{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
  
 /* FOOTER  */
 footer {
