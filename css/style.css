@@ -172,37 +172,75 @@ background-color:#FFCD00 ;
 
 }
 
+
+ 
 #problemas #todos-card {
      display: flex;
-     flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+     flex-wrap: wrap; /* Permite quebra de linha para os itens */
      justify-content: center; /* Centraliza os cards horizontalmente */
      gap: 20px; /* Espaçamento entre os cards */
-     width: 50%;
+     width: 50%; /* Garante que o container ocupe toda a largura */
+   }
+   
+   #problemas .card {
+     background-color: #212721;
+     height: 220px;
+     width: 350px;
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+     justify-content: center;
+     border-radius: 2.5%;
+     box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
+     position: relative; /* Adiciona a referência para o posicionamento do ícone */
+     padding: 10px;
+   }
+   
+   #problemas .card-icon {
+     position: absolute; /* Posiciona o ícone em relação ao card */
+     top: 10px; /* Ajuste conforme necessário para posicionar corretamente */
+     left: 10px; /* Ajuste conforme necessário para posicionar corretamente */
+     font-size: 15px; /* Ajuste o tamanho do ícone conforme necessário */
+     color: #FFCD00; /* Adicione cor ou estilo conforme necessário */
+     display: flex;
+     justify-content: start;
+     align-items: start;
+     text-align: start;
+   }
+
+#problemas .card h3{
+     font-size: 25px;
+     font-family:"Satoshi-Bold";
+     margin-left: 15px;
+     margin-top: 15px;
+     margin-bottom: 5px;
+}
+
+#problemas .card p{
+     font-size: 20px;
+     margin-left: 15px;
+     margin-right: 10px;
+     font-family:"Satoshi-Regular";
+}
+#problemas a{
+
+     background-color: #212721;
+     color:#FFCD00;
+     padding: 20px;
+     border-radius: 15px;
+     font-size: 35px;
+     text-decoration: none;
+     transition: 0.3 ease;
+     margin-top: 30px;
+     box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
+     font-family:"Satoshi-Bold";
+}
+
+#problemas a:hover{
      
-     
+ background-color: #FFCD00;
+ color: #212721;
  }
- 
- #problemas #todos-card {
-  display: flex;
-  flex-wrap: wrap; /* Permite quebra de linha para os itens */
-  justify-content: center; /* Centraliza os cards horizontalmente */
-  gap: 20px; /* Espaçamento entre os cards */
-  width: 70%; /* Garante que o container ocupe toda a largura */
-}
-
-#problemas .card {
-  background-color: #FFCD00;
-  height: 200px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 2.5%;
-}
-
-
-
 
 
 
