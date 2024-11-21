@@ -165,12 +165,12 @@ li {
 }
 
 #problemas #todos-card {
-     display: flex;
-     flex-wrap: wrap; /* Permite quebra de linha para os itens */
-     justify-content: center; /* Centraliza os cards horizontalmente */
-     gap: 20px; /* Espaçamento entre os cards */
-     width: 70%; /* Garante que o container ocupe toda a largura */
-   }
+ display: flex;
+ flex-wrap: wrap; /* Permite quebra de linha para os itens */
+ justify-content: center; /* Centraliza os cards horizontalmente */
+ gap: 20px; /* Espaçamento entre os cards */
+ width: 70%; /* Garante que o container ocupe toda a largura */
+}
    
 #problemas .card {
  background-color: #212721;
@@ -213,16 +213,17 @@ li {
  font-family:"Satoshi-Regular";
 }
 
-     background-color: #212721;
-     color:#FFCD00;
-     padding: 20px;
-     border-radius: 15px;
-     font-size: 35px;
-     text-decoration: none;
-     transition: 0.3 ease;
-     margin-top: 30px;
-     box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
-     font-family:"Satoshi-Bold";
+#problemas a {
+ background-color: #212721;
+ color:#FFCD00;
+ padding: 20px;
+ border-radius: 15px;
+ font-size: 35px;
+ text-decoration: none;
+ transition: 0.3 ease;
+ margin-top: 30px;
+ box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
+ font-family:"Satoshi-Bold";
 }
 
 #problemas a:hover {
@@ -237,11 +238,11 @@ li {
   width: 100%;
   color: #FFCD00;
   display: flex;
-  background: linear-gradient(to right, rgb(255, 205, 0) 10%, #212721 );
+  background: linear-gradient(to right, #212721 50%, #FFCD00);
   color: white;
   flex-direction: column;
   text-align: center;
-  background: linear-gradient(135deg, rgb(21, 25, 22), hwb(50 0% 0% / 0.957));
+  
   justify-content: center;
 }
 
@@ -394,14 +395,6 @@ li {
   width: 100%;
   justify-content: center;
   align-items: center;
-}
-
-/* FAQ */
-.faq-answer
-{
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
 }
  
 /* FOOTER  */
