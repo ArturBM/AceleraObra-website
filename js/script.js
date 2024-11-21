@@ -8,13 +8,13 @@ var direction
 nextSolutions.addEventListener('click', function(){
     direction = -1
     translateAmount = 100 / solutions.length
-    sliderSolutions.style.justifyContent = 'flex-start'
+    carouselSolutions.style.justifyContent = 'flex-start'
     sliderSolutions.style.transform = `translate(-${translateAmount}%)`
 })
 prevSolutions.addEventListener('click', function(){
     direction = 1
     translateAmount = 100 / solutions.length
-    sliderSolutions.style.justifyContent = 'flex-end'
+    carouselSolutions.style.justifyContent = 'flex-end'
     sliderSolutions.style.transform = `translate(${translateAmount}%)`
 })
 sliderSolutions.addEventListener('transitionend', function(){

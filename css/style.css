@@ -113,8 +113,8 @@ li{
 {
   border: 2px, solid blue;
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
+  overflow: hidden;
 }
 
 .servicos
@@ -130,7 +130,11 @@ li{
 
 .carousel .controls
 {
-  align-self: center;
+  left: 50%;
+  position: absolute;
+  display: flex;
+  align-self: flex-end;
+  z-index: 10; /* Para garantir que os botões fiquem acima dos outros itens */
 }
 
 .slider
