@@ -1,3 +1,9 @@
+@charset "ütf-8";
+
+/*CSS Document*/
+
+/*NavBar*/
+
 *{
     margin-top: 0;
     margin-bottom: 0;
@@ -59,17 +65,27 @@ li{
 
 /* Pagina Main */
 
-#main{
-    background-image: url('../img/LAMINA.png');
-    background-size: cover; 
-    background-position: center; 
-
-    height: 1000px;
-    width: auto;
-    color: #FFCD00;
-    display: flex;
-    flex-direction: column;
-}
+#main {
+     background-image: url('../img/LAMINA.png');
+     background-size: cover; 
+     background-position: center; 
+ 
+     height: 1000px;
+     width: auto;
+     color: #FFCD00;
+     display: flex;
+     position: relative; /* Necessário para posicionar o pseudo-elemento */
+ }
+ 
+ #main::after {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 3px; /* Altura da "borda" */
+     background: linear-gradient(to left, #212721, #FFCD00);
+ }
 
 #main article{
     margin-top: 300px;
@@ -94,9 +110,15 @@ li{
     color:#FFCD00;
     padding: 20px;
     border-radius: 15px;
-    font-size: 50px;
+    font-size: 35px;
     text-decoration: none;
     transition: 0.3 ease;
+}
+
+#main #seta{
+
+background-color:#FFCD00 ;
+
 }
 
 #main article a:hover{
@@ -104,9 +126,134 @@ li{
 
 }
 
+#problemas{
+
+     height: 1000px;
+     width: auto;
+     color: #FFCD00;
+     display: flex;
+     background: linear-gradient(to right, #212721 50%, #FFCD00);
+     color: white;
+     flex-direction: column;
+     align-items: center;
+     
+}
+
+#problemas #card-title {
+     margin-top: 100px;
+     display: flex;
+     flex-direction: column; 
+     justify-content: center;
+     align-items: center; 
+     text-align: center;
+ }
+ 
+ #problemas #card-title h2 {
+     font-family: "Satoshi-Bold";
+     color: grey;
+     font-size: 30px;
+     margin-bottom: 10px; 
+     margin-top: 10px;
+ }
+ 
+ #problemas #card-title h1 {
+     font-family: "Satoshi-Bold";
+     color: white;
+     font-size: 40px;
+     width: 65%; 
+     text-align: center;
+     margin-bottom: 20px;
+ }
+ 
+#problema-img{
+     width: 55px;
+     height: 66px;
+
+}
+
+#problemas #todos-card {
+     display: flex;
+     flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+     justify-content: center; /* Centraliza os cards horizontalmente */
+     gap: 20px; /* Espaçamento entre os cards */
+     width: 50%;
+     
+     
+ }
+ 
+ #problemas .card {
+     background-color: #FFCD00;
+     height: 200px;
+     width: 300px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 10px; /* Espaçamento extra ao redor de cada card */
+     border-radius: 2.5%;
+
+ }
+ 
+ #problemas .card p{
+
+     margin-left: 8px;
+     margin-right: 8px;
+ }
 
 
 
+
+
+
+
+
+
+/* carousel de serviços */
+.carousel
+{
+  border: 2px, solid blue;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.servicos
+{
+  height: 400px;
+  width: 600px;
+}
+.clientes
+{
+  height: 400px;
+  width: 90%;
+}
+
+.carousel .controls
+{
+  left: 50%;
+  position: absolute;
+  display: flex;
+  align-self: flex-end;
+  z-index: 10; /* Para garantir que os botões fiquem acima dos outros itens */
+}
+
+.slider
+{
+  display: flex;
+  height: 100%;
+  width: 300%;
+  flex-shrink: 0;
+  transition: 0.5s;
+}
+
+.slider article
+{
+  display: flex;
+  flex-direction: column;
+  flex: 1, 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
 
 
 /* Fonte Satoshi */
@@ -260,3 +407,4 @@ li{
   }
   
   
+
