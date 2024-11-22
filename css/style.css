@@ -454,7 +454,7 @@ li {
 }
 
 .clientes {
-  height: 200px;
+  height: 400px;
   width: 60%;
 }
 
@@ -503,7 +503,8 @@ li {
 #clientes{
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #d9d8d6;
+  background-color: #313731;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -516,7 +517,6 @@ li {
   padding: 0;
 }
 #clientes img{
-  height: 100%;
   flex: 1 0;
   width: calc(100% / 9);
   border-radius: 50%;
@@ -842,7 +842,7 @@ li {
   background-color: #212721;
   width: 100%;
   height: 100%;
-  
+  padding-bottom: 100px;
 }
 
 #formulario h2{
@@ -855,8 +855,9 @@ li {
 
 /* Estilo geral do formulário */
 #forms {
+  justify-self: center;
+  align-self: center;
   width: 450px; /* Largura ajustável */
-  margin: 50px auto; /* Centraliza o formulário */
   background-color: #212721; /* Fundo preto */
   padding: 20px;
   border-radius: 10px;
@@ -954,7 +955,7 @@ li {
 /* FOOTER  */
 
 footer {
-  background-color: #212721;
+  background-color: #0d0f0d;
   height: 300px;
   position: relative;
   display: flex;
