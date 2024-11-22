@@ -238,7 +238,7 @@ li {
   width: 100%;
   color: #FFCD00;
   display: flex;
-  background: linear-gradient(to right, rgb(255, 205, 0) 10%, #212721 );
+  background: linear-gradient(to right, #212721 50%, #FFCD00);
   color: white;
   flex-direction: column;
   text-align: center;
