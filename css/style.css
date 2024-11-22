@@ -526,13 +526,15 @@ li {
 /* Para Quem */
 
 #pra-quem-e{
-  color: white;
-  height: 800px;
+  height: 100%;
   width: 100%;
-  background: linear-gradient(to right, #212721 50%, #FFCD00);
+  color: #d9d8d6;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #212721;
   display: flex;
-  flex-direction: column;
-  text-align: center;  
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 #pra-quem-e .card3 {
@@ -585,6 +587,12 @@ li {
  margin-left: 25px;
  box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
 }
+#pra-quem-e article a:hover{
+
+  background-color: #FFCD00;
+  color: #212721;
+}
+
 
 /* Venda Mais */
 
@@ -654,6 +662,112 @@ li {
   overflow: hidden;
 }
 
+/* Imagens e Texo */
+#imagens-e-texto {
+  height: 100%;
+  width: 100%;
+  background-color: #212721;
+  display: flex;
+  flex-direction: column;
+}
+
+.images-text {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+}
+
+.images-text article {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.images-text article img {
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  border-radius: 5%;
+}
+
+.images-text a{
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  background-color: #212721;
+  color: #FFCD00;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 25px;
+  text-decoration: none;
+  transition: 0.3s ease; /* Corrige a transição */
+  box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
+  font-family: "Satoshi-Bold";
+  margin-top: 20px; /* Adiciona um espaçamento superior ao botão */
+}
+
+.images-text a:hover{
+  background-color: #FFCD00;
+  color: #212721; /* Troca de cor no hover */
+}
+
+.textos{
+  width: 100%;
+  max-width: 650px;
+}
+
+#id1 h2{
+  font-family: "Satoshi-Bold";
+  color: #FFCD00;
+  font-size: 35px;
+}
+
+#id1 h3{
+  font-family: "Satoshi-Bold";
+  color: white;
+  font-size: 25px;
+}
+#id1{
+  color: white;
+  margin-left: 30px;
+}
+
+#id2 h2{ /*Nossos diferenciais*/
+  font-family: "Satoshi-Bold";
+  color: white;
+  font-size: 50px;
+}
+
+#id2 h3{
+  font-family: "Satoshi-Bold";
+  color: #FFCD00;
+  font-size: 25px;
+}
+#id2{
+  color: white;
+  margin-right: 30px;
+}
+
+#id3 h2{
+  font-family: "Satoshi-Bold";
+  color: #FFCD00;
+  font-size: 50px;
+}
+
+#id3 h3{
+  font-family: "Satoshi-Bold";
+  color: #FFCD00;
+  font-size: 35px;
+}
+#id3{
+  color: white;
+}
 
 /* Sobre Nós */
 #quem-somos {
