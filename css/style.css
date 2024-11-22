@@ -170,6 +170,7 @@ li {
   justify-content: center; /* Centraliza os cards horizontalmente */
   gap: 20px; /* Espaçamento entre os cards */
   width: 100%; /* Garante que o container ocupe toda a largura */
+  max-width: 1400px;
 }
    
 #problemas .card {
