@@ -387,14 +387,12 @@ li {
   width: 90%;
   max-width: 1200px;
   position: relative;
-  overflow: hidden;
   background-color: #ffffff; 
   border-radius: 10px;
   padding: 40px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
-  overflow: hidden;
-  
+  overflow: hidden;  
 }
 
 .caroul-img
@@ -465,6 +463,8 @@ li {
 }
 
 .slider article {
+  margin-left: 40px;
+  margin-right: 40px;
   display: flex;
   flex-direction: row-reverse;
   flex: 1, 0;
