@@ -568,6 +568,11 @@ li {
   color: #212721;
 }
 
+#pra-quem-e a:hover {
+  background-color: #FFCD00;
+  color: #212721;
+  }
+/* Venda Mais */
 
 #pra-quem-e a:hover {
   background-color: #FFCD00;
@@ -1146,7 +1151,7 @@ footer::after {
   * font-variation-settings: wght 900.0;
   *
   * available axes:
-  'wght' (range from 300.0 to 900.0
+\  'wght' (range from 300.0 to 900.0
   */
   @font-face {
     font-family: 'Satoshi-VariableItalic';
