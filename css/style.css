@@ -323,7 +323,8 @@ li {
 #solucoes .card2 {
   background-color: #212721;
   height: 220px;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: start;
