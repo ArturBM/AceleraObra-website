@@ -690,13 +690,6 @@ li {
   margin-left: 30px;
 }
 
-/* FAQ */
-
-.faq-answer{
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
 
 /* PRA QUEM É */
 #pra-quem-e{
