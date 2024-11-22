@@ -542,6 +542,78 @@ li {
  box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
 }
 
+/* Venda Mais */
+
+/* Venda Mais */
+
+#venda-mais {
+  background-color: #212721;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+#venda-mais img {
+  height: 80px; /* Reduz o tamanho da imagem */
+  width: 80px;
+  margin: 0 auto 10px auto; /* Adiciona espaçamento inferior */
+}
+
+#venda-mais h2 {
+  margin-top: 10px; /* Reduz a margem superior */
+  color: #FFCD00;
+  margin-bottom: 20px; /* Reduz a margem inferior */
+  font-family: "Satoshi-Bold";
+  font-size: 28px; /* Ajusta o tamanho da fonte para dar mais espaço */
+}
+
+#venda-mais a {
+  background-color: #212721;
+  color: #FFCD00;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.3s ease; /* Corrige a transição */
+  box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
+  font-family: "Satoshi-Bold";
+  margin-top: 20px; /* Adiciona um espaçamento superior ao botão */
+}
+#venda-mais a:hover {
+  background-color: #FFCD00;
+  color: #212721; /* Troca de cor no hover */
+}
+
+#venda-mais p {
+  color: #212721;
+  margin-bottom: 15px;
+  font-family: "Satoshi-Regular";
+  font-size: 22px;
+}
+
+#venda-mais article {
+  height: auto; /* Ajusta para altura automática */
+  width: 40%;
+  max-width: 1200px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px; /* Reduz o padding para dar mais espaço interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Garante que os elementos fiquem alinhados no topo */
+  align-items: center; /* Centraliza horizontalmente os elementos */
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
 /* Sobre Nos */
 
 #quem-somos{
