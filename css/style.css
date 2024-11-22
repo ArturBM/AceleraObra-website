@@ -3,6 +3,9 @@
 /*CSS Document*/
 
 /*NavBar*/
+html{
+  scroll-behavior: smooth;
+}
 
 * {
  margin-top: 0;
@@ -23,14 +26,9 @@ nav {
 }
 
 .logo {
- margin-left: 200px;
- width: 20%;
-}
-
-.logo img {
- height: 500px;
- padding: 0;
- margin: 0;
+ width: 400px;
+ margin-left: -100px;
+ margin-right: -100px;
 }
 
 .nav-buttons {
@@ -39,9 +37,7 @@ nav {
  list-style-type: none; 
  margin: 0;
  padding: 0;
- gap: 70px;
- justify-content: end;
- margin-right: 200px;
+ gap: 40px;
 }
 
 li {
@@ -85,8 +81,8 @@ li {
  }
 
 #main article { 
- margin-top: 300px;
- margin-left: 300px;
+ margin-top: 100px;
+ margin-left: 50px;
  width: 600px;
 }
 
@@ -123,10 +119,11 @@ li {
 
 #problemas {
  height: 100%;
+ padding-bottom: 20px;
  width: auto;
  color: #FFCD00;
  display: flex;
- background: linear-gradient(to right, #212721 50%, #FFCD00);
+ background: #212721;
  color: white;
  flex-direction: column;
  align-items: center;    
@@ -144,7 +141,7 @@ li {
  
  #problemas #card-title h2 {
  font-family: "Satoshi-Bold";
- color: grey;
+ color: #d9d8d6;
  font-size: 30px;
  margin-bottom: 10px; 
  margin-top: 10px;
@@ -152,7 +149,7 @@ li {
  
  #problemas #card-title h1 {
  font-family: "Satoshi-Bold";
- color: white;
+ color: #FFCD00;
  font-size: 40px;
  width: 65%; 
  text-align: center;
@@ -174,7 +171,7 @@ li {
 }
    
 #problemas .card {
- background-color: #212721;
+ background-color: #2b332b;
  height: 220px;
  max-width: 350px;
  min-width: 250px;
@@ -185,9 +182,11 @@ li {
  align-items: start;
  justify-content: center;
  border-radius: 2.5%;
- box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
+ border:1px solid #d9d8d6;
  position: relative; /* Adiciona a referência para o posicionamento do ícone */
  padding: 10px;
+ margin-left: 10px;
+ margin-right: 10px;
 }
    
 #problemas .card-icon {
@@ -240,10 +239,12 @@ li {
 
 #solucoes {
   height: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
   width: 100%;
   color: #FFCD00;
   display: flex;
-  background: linear-gradient(to right, #212721 50%, #FFCD00);
+  background: #212721;
   color: white;
   flex-direction: column;
   text-align: center;
@@ -260,10 +261,10 @@ li {
 
 #solucoes #solucoes-title h1 {
   font-family: "Satoshi-Bold";
-  color: white;
+  color: #FFCD00;
   font-size: 40px;
-  width: 40%; 
-  margin-bottom: 20px; 
+  width: 80%; 
+  margin-bottom: 20px;
 }
 
 #solucoes #solucoes-title h2 {
@@ -292,17 +293,22 @@ li {
   text-align: center;
   font-size: 20px;
   margin-bottom: 20px;
-  width: 30%;
+  width: 80%;
   
 }
 
+#solucoes ul {
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
 #solucoes #text-solucoes li {
+  margin-top: 10px;
   flex-direction: column; 
   justify-content: center;
-  align-items: start; 
-  text-align: center;
+  align-items: start;
+  text-align: start;
   font-size: 20px;
-  width: 480px;
 }
 
 #solucoes #todos-card2 {
@@ -359,6 +365,8 @@ li {
 
 #servicos
 {
+  padding-top: 100px;
+  padding-bottom: 100px;
   background: 
   linear-gradient(to left, rgba(33, 39, 33, 0.95) 50%, rgba(33, 39, 33, 0.95) 50%), 
   url('../img/mac.jpg'); /* Substitua 'mac.png' pelo caminho correto da imagem */
@@ -379,7 +387,7 @@ li {
 
 #servicos h3{
   color: #FFCD00;
-  width: 40%;
+  width: 70%;
   font-size: 45px;
   text-align: center;
   font-family: "Satoshi-Bold";
@@ -439,11 +447,9 @@ li {
   color: #212721;
 }
 
-
-
 .servicos {
   height: 400px;
-  width: 750px;
+  width: 80%;
   border-radius: 30px;
 }
 
@@ -452,9 +458,18 @@ li {
   width: 60%;
 }
 
-.carousel .controls {
-  position: absolute;
-  z-index: 10; /* Para garantir que os botões fiquem acima dos outros itens */
+.controls {
+  margin-top: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls>btn{
+  background-color: #FFCD00;
+  color: 212721;
+  border-radius: 50%;
+  background: none;
 }
 
 .slider {
@@ -488,13 +503,15 @@ li {
 /* Para Quem */
 
 #pra-quem-e{
-  color: white;
-  height: 800px;
+  height: 100%;
   width: 100%;
-  background: linear-gradient(to right, #212721 50%, #FFCD00);
+  color: #d9d8d6;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #212721;
   display: flex;
-  flex-direction: column;
-  text-align: center;  
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 #pra-quem-e .card3 {
@@ -545,6 +562,12 @@ li {
  margin-left: 25px;
  box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
 }
+#pra-quem-e article a:hover{
+
+  background-color: #FFCD00;
+  color: #212721;
+}
+
 
 #pra-quem-e a:hover {
   background-color: #FFCD00;
@@ -620,6 +643,112 @@ li {
   overflow: hidden;
 }
 
+/* Imagens e Texo */
+#imagens-e-texto {
+  height: 100%;
+  width: 100%;
+  background-color: #212721;
+  display: flex;
+  flex-direction: column;
+}
+
+.images-text {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+}
+
+.images-text article {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.images-text article img {
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  border-radius: 5%;
+}
+
+.images-text a{
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  background-color: #212721;
+  color: #FFCD00;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 25px;
+  text-decoration: none;
+  transition: 0.3s ease; /* Corrige a transição */
+  box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
+  font-family: "Satoshi-Bold";
+  margin-top: 20px; /* Adiciona um espaçamento superior ao botão */
+}
+
+.images-text a:hover{
+  background-color: #FFCD00;
+  color: #212721; /* Troca de cor no hover */
+}
+
+.textos{
+  width: 100%;
+  max-width: 650px;
+}
+
+#id1 h2{
+  font-family: "Satoshi-Bold";
+  color: #FFCD00;
+  font-size: 35px;
+}
+
+#id1 h3{
+  font-family: "Satoshi-Bold";
+  color: white;
+  font-size: 25px;
+}
+#id1{
+  color: white;
+  margin-left: 30px;
+}
+
+#id2 h2{ /*Nossos diferenciais*/
+  font-family: "Satoshi-Bold";
+  color: white;
+  font-size: 50px;
+}
+
+#id2 h3{
+  font-family: "Satoshi-Bold";
+  color: #FFCD00;
+  font-size: 25px;
+}
+#id2{
+  color: white;
+  margin-right: 30px;
+}
+
+#id3 h2{
+  font-family: "Satoshi-Bold";
+  color: #FFCD00;
+  font-size: 50px;
+}
+
+#id3 h3{
+  font-family: "Satoshi-Bold";
+  color: #FFCD00;
+  font-size: 35px;
+}
+#id3{
+  color: white;
+}
 
 
 /* Sobre Nos */
@@ -639,7 +768,7 @@ li {
 
 #quem-somos h2 {
   font-family: "Satoshi-Bold";
-  color: white;
+  color: #FFCD00;
   font-size: 40px;
   margin-bottom: 20px;
   text-align: center; /* Título centralizado */
@@ -679,7 +808,7 @@ li {
   margin-left: 30px;
 }
 
-/* FAQ */
+
 
 .faq-answer{
   max-height: 0;
@@ -744,6 +873,9 @@ li {
   border-radius: 5px;
   font-size: 14px;
   width: 95%; /* Ajusta para ocupar toda a largura do artigo */
+
+/* PRA QUEM É */
+
  
 }
 

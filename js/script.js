@@ -41,20 +41,3 @@ for(let i = 0; i < carousel.length; i++)
     })
 }
 
-// FAQ
-
-const faqQuestions = document.getElementsByClassName("faq-question")
-
-for(let i = 0; i < faqQuestions.length; i++)
-{
-    faqQuestions[i].addEventListener('click', function() {
-        this.classList.toggle("active")
-        answer = this.nextElementSibling
-        if (answer.style.maxHeight)
-        {
-            answer.style.maxHeight = null
-        } else {
-            answer.style.maxHeight = answer.scrollHeight + 'px'
-        }
-    })
-}
