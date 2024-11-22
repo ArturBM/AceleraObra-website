@@ -996,6 +996,9 @@ footer {
   margin: 0;
   font-size: 30px;
 }
+.footer-contact p{
+  color: white;
+}
 
 .footer-contact h3 {
   color: #FFCD00; /* Cor do texto "Endereço:" */
