@@ -149,7 +149,7 @@ li {
  
  #problemas #card-title h1 {
  font-family: "Satoshi-Bold";
- color: white;
+ color: #FFCD00;
  font-size: 40px;
  width: 65%; 
  text-align: center;
@@ -261,7 +261,7 @@ li {
 
 #solucoes #solucoes-title h1 {
   font-family: "Satoshi-Bold";
-  color: white;
+  color: #FFCD00;
   font-size: 40px;
   width: 80%; 
   margin-bottom: 20px;
@@ -650,7 +650,7 @@ li {
 
 #quem-somos h2 {
   font-family: "Satoshi-Bold";
-  color: white;
+  color: #FFCD00;
   font-size: 40px;
   margin-bottom: 20px;
   text-align: center; /* Título centralizado */
