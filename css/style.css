@@ -122,7 +122,7 @@ li {
 /* Problemas e Cards */
 
 #problemas {
- height: 1000px;
+ height: 100%;
  width: auto;
  color: #FFCD00;
  display: flex;
@@ -165,18 +165,21 @@ li {
 }
 
 #problemas #todos-card {
- display: flex;
- flex-wrap: wrap; /* Permite quebra de linha para os itens */
- justify-content: center; /* Centraliza os cards horizontalmente */
- gap: 20px; /* Espaçamento entre os cards */
- width: 70%; /* Garante que o container ocupe toda a largura */
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem linha */
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  gap: 20px; /* Espaçamento entre os cards */
+  width: 100%; /* Garante que o container ocupe toda a largura */
 }
    
 #problemas .card {
  background-color: #212721;
  height: 220px;
- width: 350px;
+ max-width: 350px;
+ min-width: 250px;
  display: flex;
+ flex: 1 1 calc(33.333% - 40px);
+ box-sizing: border-box;
  flex-direction: column;
  align-items: start;
  justify-content: center;
@@ -222,6 +225,7 @@ li {
  text-decoration: none;
  transition: 0.3 ease;
  margin-top: 30px;
+ margin-bottom: 5%;
  box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
  font-family:"Satoshi-Bold";
 }
@@ -234,7 +238,7 @@ li {
 /* Solucoes e Cards */
 
 #solucoes {
-  height: 1000px;
+  height: 100%;
   width: 100%;
   color: #FFCD00;
   display: flex;
@@ -302,11 +306,10 @@ li {
 
 #solucoes #todos-card2 {
   display: flex;
-  flex-wrap: wrap; /* Permite quebra de linha para os itens */
-  justify-content: center; /* Centraliza os cards horizontalmente */
-  gap: 20px; /* Espaçamento entre os cards */
-  width: 100%; /* Garante que o container ocupe toda a largura */ 
-  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%
 }
 
 #solucoes .card2 {
@@ -616,55 +619,59 @@ li {
 
 /* Sobre Nos */
 
-#quem-somos{
+/* Sobre Nós */
+#quem-somos {
   color: white;
-  height: 800px;
   width: 100%;
   background-color: #212721;
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  flex-direction: column; /* O conteúdo será empilhado (título em cima) */
+  justify-content: flex-start;
+  align-items: center;
+  padding: 90px;
+  box-sizing: border-box;
 }
 
-#quem-somos #sobre h2{
+#quem-somos h2 {
   font-family: "Satoshi-Bold";
   color: white;
   font-size: 40px;
-  width: 100%; 
   margin-bottom: 20px;
-  text-align: left;
-  margin-left: 400px;
+  text-align: center; /* Título centralizado */
 }
 
-#quem-somos h3{
+#quem-somos #sobre {
+  display: flex;
+  flex-direction: row; /* Alinha texto e imagem lado a lado */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+  max-width: 1200px; /* Limita o tamanho máximo do container */
+}
+
+#quem-somos #sobre h3 {
   font-family: "Satoshi-Bold";
   color: gray;
   font-size: 22px;
-  width: 100%; 
   margin-bottom: 20px;
   text-align: left;
-  margin-left: 400px;
-  margin-top: 50px;
 }
 
-#quem-somos #sobre p{
+#quem-somos #sobre p {
   font-family: "Satoshi-Regular";
   font-size: 20px;
-  width: 20%; 
   margin-bottom: 20px;
   text-align: left;
-  margin-left: 400px;
+  line-height: 1.6;
+  flex: 1; /* Texto ocupa o máximo de espaço disponível */
 }
 
-#quem-somos img{
-  height: 480px;
-  width: 800px;
-  margin-left: auto;
-  margin-right: 300px;
-  margin-top: -200px;
-  filter: brightness(1) sepia(0) saturate(1); 
+#quem-somos img {
+  max-width: 40%; /* Limita a largura da imagem */
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(31, 38, 31, 0.9); /* Sombra suave que mistura com o fundo */
+  box-shadow: 0 2px 6px rgba(31, 38, 31, 0.9); /* Sombra suave */
+  margin-left: 30px;
 }
 
 /* FAQ */
