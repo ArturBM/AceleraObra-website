@@ -393,7 +393,7 @@ li {
   font-family: "Satoshi-Bold";
   margin-bottom: 30px;
 }
-/* Carossel de Serviços */
+/* Carossels */
 
 .carousel {
   width: 90%;
@@ -500,6 +500,29 @@ li {
   align-self: center;
 }
 
+#clientes{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #d9d8d6;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+#clientes h2{
+  margin-bottom: 20px;
+}
+#clientes .carousel{
+  padding: 0;
+}
+#clientes img{
+  height: 100%;
+  flex: 1 0;
+  width: calc(100% / 9);
+  border-radius: 50%;
+  background-color: #212721;  
+}
+
 /* Para Quem */
 
 #pra-quem-e{
@@ -562,8 +585,6 @@ li {
  margin-left: 25px;
  box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
 }
-
-/* Venda Mais */
 
 /* Venda Mais */
 
@@ -633,9 +654,6 @@ li {
   overflow: hidden;
 }
 
-
-
-/* Sobre Nos */
 
 /* Sobre Nós */
 #quem-somos {
