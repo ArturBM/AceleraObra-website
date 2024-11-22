@@ -209,6 +209,7 @@ li {
  margin-bottom: 5px;
 }
 
+#problemas .card img
 #problemas .card p {
  font-size: 20px;
  margin-left: 15px;
@@ -393,7 +394,7 @@ li {
   font-family: "Satoshi-Bold";
   margin-bottom: 30px;
 }
-/* Carossel de Serviços */
+/* Carossels */
 
 .carousel {
   width: 90%;
@@ -454,7 +455,7 @@ li {
 }
 
 .clientes {
-  height: 200px;
+  height: 400px;
   width: 60%;
 }
 
@@ -498,6 +499,29 @@ li {
   width: calc(100%/3);
   justify-items: center;
   align-self: center;
+}
+
+#clientes{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #313731;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+#clientes h2{
+  margin-bottom: 20px;
+}
+#clientes .carousel{
+  padding: 0;
+}
+#clientes img{
+  flex: 1 0;
+  width: calc(100% / 9);
+  border-radius: 50%;
+  background-color: #212721;  
 }
 
 /* Para Quem */
@@ -553,6 +577,8 @@ li {
 
 #pra-quem-e article a{
  background-color: #212721;
+ text-align: center;
+ width: 50%;
  color:#FFCD00;
  padding: 20px;
  border-radius: 15px;
@@ -568,17 +594,6 @@ li {
   color: #212721;
 }
 
-#pra-quem-e a:hover {
-  background-color: #FFCD00;
-  color: #212721;
-  }
-/* Venda Mais */
-
-#pra-quem-e a:hover {
-  background-color: #FFCD00;
-  color: #212721;
-  }
-/* Venda Mais */
 
 /* Venda Mais */
 
@@ -755,9 +770,6 @@ li {
   color: white;
 }
 
-
-/* Sobre Nos */
-
 /* Sobre Nós */
 #quem-somos {
   color: white;
@@ -814,11 +826,15 @@ li {
 }
 
 
-
-.faq-answer{
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+/* PRA QUEM É */
+#pra-quem-e{
+  color: #d9d8d6;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #212721;
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /* Forms */
@@ -827,8 +843,7 @@ li {
   background-color: #212721;
   width: 100%;
   height: 100%;
-  padding: 150px;
-  
+  padding-bottom: 100px;
 }
 
 #formulario h2{
@@ -837,12 +852,13 @@ li {
   margin-bottom: 20px;
   font-family:"Satoshi-Bold";
   color: white;
-  margin-right: 210px;
 }
+
 /* Estilo geral do formulário */
 #forms {
+  justify-self: center;
+  align-self: center;
   width: 450px; /* Largura ajustável */
-  margin: 50px auto; /* Centraliza o formulário */
   background-color: #212721; /* Fundo preto */
   padding: 20px;
   border-radius: 10px;
@@ -850,7 +866,6 @@ li {
   color: white; /* Texto branco */
   font-family: "Satoshi-Regular";
   border: 1px solid #FFCD00;
-  margin-left: 900px;
 }
 
 /* Título principal do formulário */
@@ -878,9 +893,6 @@ li {
   border-radius: 5px;
   font-size: 14px;
   width: 95%; /* Ajusta para ocupar toda a largura do artigo */
-
-/* PRA QUEM É */
-
  
 }
 
@@ -944,7 +956,7 @@ li {
 /* FOOTER  */
 
 footer {
-  background-color: #212721;
+  background-color: #0d0f0d;
   height: 300px;
   position: relative;
   display: flex;
@@ -985,6 +997,9 @@ footer {
   margin: 0;
   font-size: 30px;
 }
+.footer-contact p{
+  color: white;
+}
 
 .footer-contact h3 {
   color: #FFCD00; /* Cor do texto "Endereço:" */
@@ -1009,6 +1024,334 @@ footer::after {
 }
 
 
+
+/* Media Queries */
+
+/* Para telas pequenas (mobile) até 480px */
+@media (max-width: 480px) {
+  nav {
+      padding: 10px;
+      height: 80px;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .logo {
+   display: none;
+  }
+
+  
+
+  .nav-buttons {
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 10px;
+  }
+
+  #main {
+      height: 600px;
+      background-position: top;
+  }
+
+  #main article {
+      margin-top: 50px;
+      width: 90%;
+  }
+
+  #problemas .card, #solucoes .card2 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  #pra-quem-e {
+      flex-direction: column;
+      padding-left: 5%;
+      padding-right: 5%;
+  }
+
+  .carousel {
+      width: 100%;
+      padding: 20px;
+  }
+
+  #servicos h2, #venda-mais h2 {
+      font-size: 28px;
+  }
+
+  #venda-mais a {
+      font-size: 14px;
+  }
+
+  .images-text article {
+      flex-direction: column;
+  }
+
+  .images-text a {
+      width: 80%;
+  }
+
+  #pra-quem-e .card3 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 40px;
+  }
+
+  #pra-quem-e h1 {
+      font-size: 28px;
+  }
+
+  #pra-quem-e li {
+      font-size: 18px;
+      width: 100%;
+  }
+
+  #pra-quem-e article a {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+      padding: 15px;
+  }
+
+  #venda-mais article {
+      width: 90%;
+      padding: 20px;
+  }
+
+  #venda-mais h2 {
+      font-size: 24px;
+  }
+
+  #venda-mais p {
+      font-size: 18px;
+  }
+
+  #imagens-e-texto article {
+      flex-direction: column;
+  }
+
+  #imagens-e-texto article img {
+      width: 100%;
+      max-height: 350px;
+  }
+
+  #id1 h2, #id2 h2, #id3 h2 {
+      font-size: 30px;
+  }
+
+  #id1 h3, #id2 h3, #id3 h3 {
+      font-size: 18px;
+  }
+
+  #quem-somos #sobre {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #quem-somos #sobre img {
+      max-width: 70%;
+      margin-left: 0;
+      margin-top: 20px;
+  }
+
+  #forms {
+      width: 90%;
+  }
+
+  #formulario h2 {
+      font-size: 30px;
+  }
+}
+
+/* Para tablets e dispositivos médios (até 768px) */
+@media (max-width: 768px) {
+  nav {
+      padding: 15px;
+      height: 90px;
+  }
+
+  .logo {
+      display: none;
+  }
+
+  .nav-buttons {
+      gap: 30px;
+  }
+
+  #main {
+      height: 800px;
+      background-position: top;
+  }
+
+  #main article {
+      width: 80%;
+  }
+
+  #problemas .card, #solucoes .card2 {
+      width: 48%;
+  }
+
+  #pra-quem-e {
+      padding-left: 10%;
+      padding-right: 10%;
+  }
+
+  .carousel {
+      width: 100%;
+      padding: 20px;
+  }
+
+  #servicos h2 {
+      font-size: 30px;
+  }
+
+  #venda-mais a {
+      font-size: 16px;
+  }
+
+  .images-text article {
+      flex-direction: column;
+  }
+
+  #servicos .caroul-text a{
+    font-size: 10px;
+  }
+
+  #pra-quem-e h1 {
+      font-size: 32px;
+  }
+
+  #venda-mais h2 {
+      font-size: 28px;
+  }
+
+  #quem-somos #sobre img {
+      max-width: 50%;
+  }
+
+  #id1 h2, #id2 h2, #id3 h2 {
+      font-size: 35px;
+  }
+
+  #id1 h3, #id2 h3, #id3 h3 {
+      font-size: 22px;
+  }
+
+  #forms {
+      width: 70%;
+  }
+
+  #formulario h2 {
+      font-size: 35px;
+  }
+}
+
+/* Para laptops e dispositivos grandes (até 1024px) */
+@media (max-width: 1024px) {
+  nav {
+      padding: 20px;
+      height: 100px;
+  }
+
+  .logo {
+      width: 350px;
+  }
+
+  .nav-buttons {
+      gap: 40px;
+  }
+
+  #main {
+      height: 900px;
+  }
+
+  #main article {
+      width: 75%;
+  }
+
+  #problemas .card, #solucoes .card2 {
+      width: 30%;
+  }
+
+  #pra-quem-e {
+      padding-left: 8%;
+      padding-right: 8%;
+  }
+
+  .carousel {
+      width: 80%;
+      padding: 30px;
+  }
+
+  #servicos h2 {
+      font-size: 32px;
+  }
+  #servicos .caroul-text a{
+    font-size: 12px;
+  }
+
+  #venda-mais a {
+      font-size: 18px;
+  }
+
+  .images-text article {
+      flex-direction: column;
+  }
+
+  #imagens-e-texto article img {
+      max-width: 80%;
+  }
+}
+
+/* Para desktops grandes (1025px em diante) */
+@media (min-width: 1025px) {
+  nav {
+      padding: 25px;
+      height: 100px;
+  }
+
+  .logo {
+      width: 400px;
+  }
+
+  .nav-buttons {
+      gap: 40px;
+  }
+
+  #main {
+      height: 1000px;
+  }
+
+  #main article {
+      width: 600px;
+  }
+
+  #problemas .card, #solucoes .card2 {
+      width: 30%;
+  }
+
+  #pra-quem-e {
+      padding-left: 10%;
+      padding-right: 10%;
+  }
+
+  .carousel {
+      width: 90%;
+  }
+
+  #servicos h2 {
+      font-size: 35px;
+  }
+
+  #venda-mais a {
+      font-size: 20px;
+  }
+
+  .images-text article {
+      flex-direction: row;
+  }
+}
 
 
 
@@ -1151,7 +1494,7 @@ footer::after {
   * font-variation-settings: wght 900.0;
   *
   * available axes:
-\  'wght' (range from 300.0 to 900.0
+  'wght' (range from 300.0 to 900.0
   */
   @font-face {
     font-family: 'Satoshi-VariableItalic';
