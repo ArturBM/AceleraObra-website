@@ -358,7 +358,6 @@ li {
 .carousel {
   border: 2px, solid blue;
   display: flex;
-  justify-content: flex-start;
   overflow: hidden;
 }
 
@@ -368,15 +367,12 @@ li {
 }
 
 .clientes {
-  height: 400px;
-  width: 90%;
+  height: 200px;
+  width: 60%;
 }
 
 .carousel .controls {
-  left: 50%;
   position: absolute;
-  display: flex;
-  align-self: flex-end;
   z-index: 10; /* Para garantir que os botões fiquem acima dos outros itens */
 }
 
@@ -395,6 +391,22 @@ li {
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+.slider>img {
+  display: flex;
+  flex-direction: column;
+  flex: 1, 0;
+  width: calc(100%/3);
+  justify-items: center;
+  align-self: center;
+}
+
+/* FAQ */
+.faq-answer
+{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
  
 /* FOOTER  */
