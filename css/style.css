@@ -3,6 +3,9 @@
 /*CSS Document*/
 
 /*NavBar*/
+html{
+  scroll-behavior: smooth;
+}
 
 * {
  margin-top: 0;
