@@ -234,7 +234,7 @@ li {
 /* Solucoes e Cards */
 
 #solucoes {
-  height: 1200px;
+  height: 1000px;
   width: 100%;
   color: #FFCD00;
   display: flex;
@@ -242,7 +242,6 @@ li {
   color: white;
   flex-direction: column;
   text-align: center;
-  
   justify-content: center;
 }
 
@@ -352,18 +351,62 @@ li {
   text-align: start;
 }
 
+/*Servicos */
 
+#servicos
+{
+  background: 
+  linear-gradient(to left, rgba(33, 39, 33, 0.95) 50%, rgba(33, 39, 33, 0.95) 50%), 
+  url('../img/mac.jpg'); /* Substitua 'mac.png' pelo caminho correto da imagem */
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
 
+#servicos h2{
+  color: grey;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Satoshi-Bold";
+
+}
+
+#servicos h3{
+  color: #FFCD00;
+  width: 40%;
+  font-size: 45px;
+  text-align: center;
+  font-family: "Satoshi-Bold";
+  margin-bottom: 30px;
+}
 /* Carossel de Serviços */
+
 .carousel {
-  border: 2px, solid blue;
+  width: 90%;
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff; 
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   overflow: hidden;
+  
+}
+
+.caroul-img
+{
+  height: 350px;
+  width: 400px;
 }
 
 .servicos {
   height: 400px;
-  width: 600px;
+  width: 750px;
+  border-radius: 30px;
 }
 
 .clientes {
@@ -378,6 +421,7 @@ li {
 
 .slider {
   display: flex;
+  flex-direction: row;
   height: 100%;
   width: 300%;
   flex-shrink: 0;
@@ -386,7 +430,7 @@ li {
 
 .slider article {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   flex: 1, 0;
   width: 100%;
   justify-content: center;
