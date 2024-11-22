@@ -322,7 +322,7 @@ li {
 
 #solucoes .card2 {
   background-color: #212721;
-  height: 220px;
+  height: 280px;
   width: 100%;
   max-width: 350px;
   display: flex;
@@ -341,6 +341,7 @@ li {
   margin-left: 15px;
   margin-top: 15px;
   margin-bottom: 5px;
+  text-align: left;
  }
 
  #solucoes .card2 p {
@@ -353,14 +354,15 @@ li {
 
 #solucoes .card-icon2 {
   position: absolute; 
-  top: 10px; 
-  left: 10px; 
+  top: 12px; 
+  left: 20px; 
   font-size: 15px; 
   color: #FFCD00; 
   display: flex;
   justify-content: start;
   align-items: start;
   text-align: start;
+  width: 30px;
 }
 
 /*Servicos */
