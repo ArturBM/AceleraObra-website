@@ -548,7 +548,7 @@ li {
   color: white;
   height: 800px;
   width: 100%;
-  background-color: #1f261f;
+  background-color: #212721;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -561,7 +561,7 @@ li {
   width: 100%; 
   margin-bottom: 20px;
   text-align: left;
-  margin-left: 600px;
+  margin-left: 400px;
 }
 
 #quem-somos h3{
@@ -571,27 +571,28 @@ li {
   width: 100%; 
   margin-bottom: 20px;
   text-align: left;
-  margin-left: 600px;
+  margin-left: 400px;
   margin-top: 50px;
 }
 
 #quem-somos #sobre p{
   font-family: "Satoshi-Regular";
   font-size: 20px;
-  width: 16%; 
+  width: 20%; 
   margin-bottom: 20px;
   text-align: left;
-  margin-left: 600px;
+  margin-left: 400px;
 }
 
 #quem-somos img{
   height: 480px;
   width: 800px;
   margin-left: auto;
-  margin-right: 580px;
+  margin-right: 300px;
   margin-top: -200px;
   filter: brightness(1) sepia(0) saturate(1); 
   border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(31, 38, 31, 0.9); /* Sombra suave que mistura com o fundo */
 }
 
 /* FAQ */
