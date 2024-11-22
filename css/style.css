@@ -403,6 +403,42 @@ li {
   width: 400px;
 }
 
+.caroul-text{
+  margin-right: 40px;
+}
+
+.caroul-text h4{
+  font-family: "Satoshi-Bold";
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.caroul-text ul{
+  margin-bottom: 20px;
+}
+.caroul-text p{
+  margin-bottom: 20px;
+}
+
+.caroul-text a{
+  background-color: #212721;
+  color:#FFCD00;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3 ease;
+  box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
+  font-family:"Satoshi-Bold";
+}
+
+.caroul-text a:hover{
+  background-color: #FFCD00;
+  color: #212721;
+}
+
+
+
 .servicos {
   height: 400px;
   width: 750px;
