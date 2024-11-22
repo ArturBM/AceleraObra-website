@@ -551,6 +551,8 @@ li {
 
 #pra-quem-e article a{
  background-color: #212721;
+ text-align: center;
+ width: 50%;
  color:#FFCD00;
  padding: 20px;
  border-radius: 15px;
