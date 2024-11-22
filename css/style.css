@@ -591,6 +591,7 @@ li {
   margin-right: 580px;
   margin-top: -200px;
   filter: brightness(1) sepia(0) saturate(1); 
+  border-radius: 8px;
 }
 
 /* FAQ */
