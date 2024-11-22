@@ -1,35 +1,47 @@
-const carouselSolutions = document.querySelector('.servicos')
-const sliderSolutions = carouselSolutions.querySelector('.slider')
-const prevSolutions = carouselSolutions.querySelector('.prev')
-const nextSolutions = carouselSolutions.querySelector('.next')
-const solutions = sliderSolutions.children
+// CAROUSEL
 
-var direction
-nextSolutions.addEventListener('click', function(){
-    direction = -1
-    translateAmount = 100 / solutions.length
-    carouselSolutions.style.justifyContent = 'flex-start'
-    sliderSolutions.style.transform = `translate(-${translateAmount}%)`
-})
-prevSolutions.addEventListener('click', function(){
-    direction = 1
-    translateAmount = 100 / solutions.length
-    carouselSolutions.style.justifyContent = 'flex-end'
-    sliderSolutions.style.transform = `translate(${translateAmount}%)`
-})
-sliderSolutions.addEventListener('transitionend', function(){
-    if (direction === -1)
+const carousel = document.querySelectorAll('.carousel')
+const slider = document.querySelectorAll('.slider')
+const prev = document.querySelectorAll('.prev')
+const next = document.querySelectorAll('.next')
+const carouselElementCount = []
+carousel.forEach((c, index) => {
+    if(index === 1)
     {
-        sliderSolutions.appendChild(sliderSolutions.firstElementChild)
+        carouselElementCount.push(c.querySelector('.slider').children.length / 3)
     } else {
-        sliderSolutions.prepend(sliderSolutions.lastElementChild)
+        carouselElementCount.push(c.querySelector('.slider').children.length)
     }
-    sliderSolutions.style.transition = 'none'
-    sliderSolutions.style.transform = `translate(0)`
-    setTimeout(() => {
-        sliderSolutions.style.transition = 'all 0.5s'
-    })
 })
+
+var index = []
+
+for(let i = 0; i < carousel.length; i++)
+{
+    index.push(0)
+    next[i].addEventListener('click', () => {
+        if(index[i] === carouselElementCount[i] - 1)
+        {
+            index[i] = 0
+        } else {
+            index[i]++
+        }
+        translateAmount = 100 / carouselElementCount[i]
+        slider[i].style.transform = `translate(-${translateAmount * index[i]}%)`
+    })
+    prev[i].addEventListener('click', () => {
+        if(index[i] === 0)
+        {
+            index[i] = carouselElementCount[i] - 1
+        } else {
+            index[i]--
+        }
+        translateAmount = 100 / carouselElementCount[i]
+        slider[i].style.transform = `translate(-${translateAmount * index[i]}%)`
+    })
+}
+
+// FAQ
 
 const faqQuestions = document.getElementsByClassName("faq-question")
 

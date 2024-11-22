@@ -122,7 +122,7 @@ li {
 /* Problemas e Cards */
 
 #problemas {
- height: 1000px;
+ height: 100%;
  width: auto;
  color: #FFCD00;
  display: flex;
@@ -165,18 +165,22 @@ li {
 }
 
 #problemas #todos-card {
- display: flex;
- flex-wrap: wrap; /* Permite quebra de linha para os itens */
- justify-content: center; /* Centraliza os cards horizontalmente */
- gap: 20px; /* Espaçamento entre os cards */
- width: 70%; /* Garante que o container ocupe toda a largura */
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem linha */
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  gap: 20px; /* Espaçamento entre os cards */
+  width: 100%; /* Garante que o container ocupe toda a largura */
+  max-width: 1400px;
 }
    
 #problemas .card {
  background-color: #212721;
  height: 220px;
- width: 350px;
+ max-width: 350px;
+ min-width: 250px;
  display: flex;
+ flex: 1 1 calc(33.333% - 40px);
+ box-sizing: border-box;
  flex-direction: column;
  align-items: start;
  justify-content: center;
@@ -222,6 +226,7 @@ li {
  text-decoration: none;
  transition: 0.3 ease;
  margin-top: 30px;
+ margin-bottom: 5%;
  box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
  font-family:"Satoshi-Bold";
 }
@@ -234,7 +239,7 @@ li {
 /* Solucoes e Cards */
 
 #solucoes {
-  height: 1200px;
+  height: 100%;
   width: 100%;
   color: #FFCD00;
   display: flex;
@@ -242,7 +247,6 @@ li {
   color: white;
   flex-direction: column;
   text-align: center;
-  background: linear-gradient(hwb(50 0% 0% / 0.957), 135deg, rgb(21, 25, 22));
   justify-content: center;
 }
 
@@ -303,11 +307,10 @@ li {
 
 #solucoes #todos-card2 {
   display: flex;
-  flex-wrap: wrap; /* Permite quebra de linha para os itens */
-  justify-content: center; /* Centraliza os cards horizontalmente */
-  gap: 20px; /* Espaçamento entre os cards */
-  width: 100%; /* Garante que o container ocupe toda a largura */ 
-  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%
 }
 
 #solucoes .card2 {
@@ -352,36 +355,111 @@ li {
   text-align: start;
 }
 
+/*Servicos */
 
-
-/* Carossel de Serviços */
-.carousel {
-  border: 2px, solid blue;
+#servicos
+{
+  background: 
+  linear-gradient(to left, rgba(33, 39, 33, 0.95) 50%, rgba(33, 39, 33, 0.95) 50%), 
+  url('../img/mac.jpg'); /* Substitua 'mac.png' pelo caminho correto da imagem */
+  height: 800px;
   display: flex;
-  justify-content: flex-start;
-  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
 }
+
+#servicos h2{
+  color: grey;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Satoshi-Bold";
+
+}
+
+#servicos h3{
+  color: #FFCD00;
+  width: 40%;
+  font-size: 45px;
+  text-align: center;
+  font-family: "Satoshi-Bold";
+  margin-bottom: 30px;
+}
+/* Carossel de Serviços */
+
+.carousel {
+  width: 90%;
+  max-width: 1200px;
+  position: relative;
+  background-color: #ffffff; 
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow: hidden;  
+}
+
+.caroul-img
+{
+  height: 350px;
+  width: 400px;
+}
+
+.caroul-text{
+  margin-right: 40px;
+}
+
+.caroul-text h4{
+  font-family: "Satoshi-Bold";
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.caroul-text ul{
+  margin-bottom: 20px;
+}
+.caroul-text p{
+  margin-bottom: 20px;
+}
+
+.caroul-text a{
+  background-color: #212721;
+  color:#FFCD00;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3 ease;
+  box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
+  font-family:"Satoshi-Bold";
+}
+
+.caroul-text a:hover{
+  background-color: #FFCD00;
+  color: #212721;
+}
+
+
 
 .servicos {
   height: 400px;
-  width: 600px;
+  width: 750px;
+  border-radius: 30px;
 }
 
 .clientes {
-  height: 400px;
-  width: 90%;
+  height: 200px;
+  width: 60%;
 }
 
 .carousel .controls {
-  left: 50%;
   position: absolute;
-  display: flex;
-  align-self: flex-end;
   z-index: 10; /* Para garantir que os botões fiquem acima dos outros itens */
 }
 
 .slider {
   display: flex;
+  flex-direction: row;
   height: 100%;
   width: 300%;
   flex-shrink: 0;
@@ -389,14 +467,337 @@ li {
 }
 
 .slider article {
+  margin-left: 40px;
+  margin-right: 40px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   flex: 1, 0;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
+.slider>img {
+  display: flex;
+  flex-direction: column;
+  flex: 1, 0;
+  width: calc(100%/3);
+  justify-items: center;
+  align-self: center;
+}
+
+/* Para Quem */
+
+#pra-quem-e{
+  color: white;
+  height: 800px;
+  width: 100%;
+  background: linear-gradient(to right, #212721 50%, #FFCD00);
+  display: flex;
+  flex-direction: column;
+  text-align: center;  
+}
+
+#pra-quem-e .card3 {
+  background-color: #212721;
+  height: 500px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  border-radius: 5%;
+  box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
+  position: relative; /* Adiciona a referência para o posicionamento do ícone */
+  padding: 10px;
+  margin-left: auto;
+  margin-right: 600px;
+  margin-top: 120px;
+}
+
+#pra-quem-e h1 {
+  font-family: "Satoshi-Bold";
+  color: white;
+  font-size: 40px;
+  width: 100%; 
+  margin-bottom: 20px;
+  text-align: left;
+  
+}
+
+#pra-quem-e li {
+  flex-direction: column; 
+  justify-content: center;
+  align-items: start; 
+  text-align: left;
+  font-size: 20px;
+  width: 480px;
+  margin-bottom: 20px;
+}
+
+#pra-quem-e article a{
+ background-color: #212721;
+ color:#FFCD00;
+ padding: 20px;
+ border-radius: 15px;
+ font-size: 20px;
+ text-decoration: none;
+ margin-right: 120px;
+ margin-left: 25px;
+ box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
+}
+
+/* Venda Mais */
+
+/* Venda Mais */
+
+#venda-mais {
+  background-color: #212721;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+#venda-mais img {
+  height: 80px; /* Reduz o tamanho da imagem */
+  width: 80px;
+  margin: 0 auto 10px auto; /* Adiciona espaçamento inferior */
+}
+
+#venda-mais h2 {
+  margin-top: 10px; /* Reduz a margem superior */
+  color: #FFCD00;
+  margin-bottom: 20px; /* Reduz a margem inferior */
+  font-family: "Satoshi-Bold";
+  font-size: 28px; /* Ajusta o tamanho da fonte para dar mais espaço */
+}
+
+#venda-mais a {
+  background-color: #212721;
+  color: #FFCD00;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.3s ease; /* Corrige a transição */
+  box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
+  font-family: "Satoshi-Bold";
+  margin-top: 20px; /* Adiciona um espaçamento superior ao botão */
+}
+#venda-mais a:hover {
+  background-color: #FFCD00;
+  color: #212721; /* Troca de cor no hover */
+}
+
+#venda-mais p {
+  color: #212721;
+  margin-bottom: 15px;
+  font-family: "Satoshi-Regular";
+  font-size: 22px;
+}
+
+#venda-mais article {
+  height: auto; /* Ajusta para altura automática */
+  width: 40%;
+  max-width: 1200px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px; /* Reduz o padding para dar mais espaço interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Garante que os elementos fiquem alinhados no topo */
+  align-items: center; /* Centraliza horizontalmente os elementos */
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
+/* Sobre Nos */
+
+/* Sobre Nós */
+#quem-somos {
+  color: white;
+  width: 100%;
+  background-color: #212721;
+  display: flex;
+  flex-direction: column; /* O conteúdo será empilhado (título em cima) */
+  justify-content: flex-start;
+  align-items: center;
+  padding: 90px;
+  box-sizing: border-box;
+}
+
+#quem-somos h2 {
+  font-family: "Satoshi-Bold";
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center; /* Título centralizado */
+}
+
+#quem-somos #sobre {
+  display: flex;
+  flex-direction: row; /* Alinha texto e imagem lado a lado */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+  max-width: 1200px; /* Limita o tamanho máximo do container */
+}
+
+#quem-somos #sobre h3 {
+  font-family: "Satoshi-Bold";
+  color: gray;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#quem-somos #sobre p {
+  font-family: "Satoshi-Regular";
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  line-height: 1.6;
+  flex: 1; /* Texto ocupa o máximo de espaço disponível */
+}
+
+#quem-somos img {
+  max-width: 40%; /* Limita a largura da imagem */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(31, 38, 31, 0.9); /* Sombra suave */
+  margin-left: 30px;
+}
+
+/* FAQ */
+
+.faq-answer{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Forms */
+
+#formulario{
+  background-color: #212721;
+  width: 100%;
+  height: 100%;
+  
+}
+
+#formulario h2{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family:"Satoshi-Bold";
+  color: white;
+}
+
+/* Estilo geral do formulário */
+#forms {
+  width: 450px; /* Largura ajustável */
+  margin: 50px auto; /* Centraliza o formulário */
+  background-color: #212721; /* Fundo preto */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  color: white; /* Texto branco */
+  font-family: "Satoshi-Regular";
+  border: 1px solid #FFCD00;
+}
+
+/* Título principal do formulário */
+
+
+/* Estilo geral do formulário */
+#formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para cada artigo do formulário */
+#formulario article {
+  margin-bottom: 15px; /* Espaçamento entre campos */
+}
+
+/* Estilo dos campos de entrada */
+#formulario form input[type="text"],
+#formulario form input[type="email"],
+#formulario form input[type="tel"] {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 95%; /* Ajusta para ocupar toda a largura do artigo */
  
+}
+
+/* Foco nos campos de entrada */
+#formulario form input:focus {
+  outline: none;
+  border-color: #FFCD00; /* Realce ao focar */
+  
+}
+
+/* Estilo dos rótulos */
+#formulario form label {
+  display: block; /* Para alinhar o texto acima do campo */
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/* Estilo do botão de envio */
+#formulario form button[type="submit"] {
+  background-color: #FFCD00;
+  border: none;
+  color: #fff;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#formulario form button[type="submit"]:hover {
+  background-color: #212721; /* Cor mais escura no hover */
+  border: 1px solid #FFCD00;
+}
+
+/* Estilo específico para a lista de opções (checkbox-list) */
+#formulario .checkbox-list {
+  margin-top: 20px; /* Espaçamento acima */
+  margin-right: 20px;
+}
+
+#formulario .checkbox-list h3 {
+  font-size: 16px; /* Título da seção de serviços */
+  margin-bottom: 10px;
+}
+
+#formulario .checkbox-list article {
+  margin-bottom: 10px; /* Espaçamento entre opções */
+}
+
+#formulario .checkbox-list input[type="radio"] {
+  margin-right: 10px; /* Espaçamento entre o rádio e o texto */
+}
+
+#formulario .checkbox-list label {
+  font-size: 14px;
+}
+
+
+
+
 /* FOOTER  */
 
 footer {
