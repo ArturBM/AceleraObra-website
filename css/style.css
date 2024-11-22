@@ -481,6 +481,67 @@ li {
   align-self: center;
 }
 
+/* Para Quem */
+
+#pra-quem-e{
+  color: white;
+  height: 800px;
+  width: 100%;
+  background: linear-gradient(to right, #212721 50%, #FFCD00);
+  display: flex;
+  flex-direction: column;
+  text-align: center;  
+}
+
+#pra-quem-e .card3 {
+  background-color: #212721;
+  height: 500px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  border-radius: 5%;
+  box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
+  position: relative; /* Adiciona a referência para o posicionamento do ícone */
+  padding: 10px;
+  margin-left: auto;
+  margin-right: 600px;
+  margin-top: 120px;
+}
+
+#pra-quem-e h1 {
+  font-family: "Satoshi-Bold";
+  color: white;
+  font-size: 40px;
+  width: 100%; 
+  margin-bottom: 20px;
+  text-align: left;
+  
+}
+
+#pra-quem-e li {
+  flex-direction: column; 
+  justify-content: center;
+  align-items: start; 
+  text-align: left;
+  font-size: 20px;
+  width: 480px;
+  margin-bottom: 20px;
+}
+
+#pra-quem-e article a{
+ background-color: #212721;
+ color:#FFCD00;
+ padding: 20px;
+ border-radius: 15px;
+ font-size: 20px;
+ text-decoration: none;
+ margin-right: 120px;
+ margin-left: 25px;
+ box-shadow: 0px 2px 6px rgba(255, 205, 0, 0.8);
+}
+
 /* FAQ */
 .faq-answer
 {
