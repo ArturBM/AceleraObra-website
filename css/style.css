@@ -594,10 +594,6 @@ li {
 }
 
 
-#pra-quem-e a:hover {
-  background-color: #FFCD00;
-  color: #212721;
-  }
 /* Venda Mais */
 
 #venda-mais {
@@ -829,7 +825,6 @@ li {
 }
 
 
-
 /* PRA QUEM É */
 #pra-quem-e{
   color: #d9d8d6;
@@ -839,7 +834,6 @@ li {
   display: flex;
   padding-left: 10%;
   padding-right: 10%;
->>>>>>> luizinho
 }
 
 /* Forms */
@@ -849,7 +843,6 @@ li {
   width: 100%;
   height: 100%;
   padding-bottom: 100px;
-
 }
 
 #formulario h2{
@@ -858,8 +851,8 @@ li {
   margin-bottom: 20px;
   font-family:"Satoshi-Bold";
   color: white;
-  margin-right: 210px;
 }
+
 /* Estilo geral do formulário */
 #forms {
   justify-self: center;
@@ -872,7 +865,6 @@ li {
   color: white; /* Texto branco */
   font-family: "Satoshi-Regular";
   border: 1px solid #FFCD00;
-  margin-left: 900px;
 }
 
 /* Título principal do formulário */
@@ -1182,3 +1174,5 @@ footer::after {
     font-style: italic;
   }
   
+  
+
