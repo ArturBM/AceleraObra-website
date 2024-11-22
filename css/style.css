@@ -721,11 +721,122 @@ li {
   padding-left: 10%;
   padding-right: 10%;
 }
-#pra-quem-e>img{
-  width: 50vw;
+
+/* Forms */
+
+#formulario{
+  background-color: #212721;
+  width: 100%;
+  height: 100%;
+  
 }
 
+#formulario h2{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family:"Satoshi-Bold";
+  color: white;
+}
+
+/* Estilo geral do formulário */
+#forms {
+  width: 450px; /* Largura ajustável */
+  margin: 50px auto; /* Centraliza o formulário */
+  background-color: #212721; /* Fundo preto */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  color: white; /* Texto branco */
+  font-family: "Satoshi-Regular";
+  border: 1px solid #FFCD00;
+}
+
+/* Título principal do formulário */
+
+
+/* Estilo geral do formulário */
+#formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para cada artigo do formulário */
+#formulario article {
+  margin-bottom: 15px; /* Espaçamento entre campos */
+}
+
+/* Estilo dos campos de entrada */
+#formulario form input[type="text"],
+#formulario form input[type="email"],
+#formulario form input[type="tel"] {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 95%; /* Ajusta para ocupar toda a largura do artigo */
  
+}
+
+/* Foco nos campos de entrada */
+#formulario form input:focus {
+  outline: none;
+  border-color: #FFCD00; /* Realce ao focar */
+  
+}
+
+/* Estilo dos rótulos */
+#formulario form label {
+  display: block; /* Para alinhar o texto acima do campo */
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/* Estilo do botão de envio */
+#formulario form button[type="submit"] {
+  background-color: #FFCD00;
+  border: none;
+  color: #fff;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#formulario form button[type="submit"]:hover {
+  background-color: #212721; /* Cor mais escura no hover */
+  border: 1px solid #FFCD00;
+}
+
+/* Estilo específico para a lista de opções (checkbox-list) */
+#formulario .checkbox-list {
+  margin-top: 20px; /* Espaçamento acima */
+  margin-right: 20px;
+}
+
+#formulario .checkbox-list h3 {
+  font-size: 16px; /* Título da seção de serviços */
+  margin-bottom: 10px;
+}
+
+#formulario .checkbox-list article {
+  margin-bottom: 10px; /* Espaçamento entre opções */
+}
+
+#formulario .checkbox-list input[type="radio"] {
+  margin-right: 10px; /* Espaçamento entre o rádio e o texto */
+}
+
+#formulario .checkbox-list label {
+  font-size: 14px;
+}
+
+
+
+
 /* FOOTER  */
 
 footer {

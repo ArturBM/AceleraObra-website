@@ -72,7 +72,7 @@
                 <p>Sem marketing, a sua empresa fica fora do radar digital, e perde a grande oportunidades de ser encontrada por potenciais clientes.</p>
             </article>
         </section>
-        <a href="">SOLICITAR ORÇAMENTO</a>
+        <a href="#formulario">SOLICITAR ORÇAMENTO</a>
     </section>
 
     <!-- SOLUÇÕES -->
@@ -240,16 +240,65 @@
     <!-- Formulário -->
     <section id="formulario">
         <h2>Entre em Contato</h2>
+        <section id="forms">
         <form action="/enviar" method="POST">
-            <input type="text" name="nome" placeholder="Nome" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="tel" name="telefone" placeholder="Telefone com DDD" required>
-            <input type="text" name="instagram" placeholder="Instagram da Empresa" required>
+          <article>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome" required>
+          </article>
+      
+          <article>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </article>
+      
+          <article>
+            <label for="telefone">Telefone com DDD:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Telefone com DDD" required>
+          </article>
+      
+          <article>
+            <label for="instagram">Instagram da Empresa:</label>
+            <input type="text" id="instagram" name="instagram" placeholder="Instagram da Empresa" required>
+          </article>
+      
+          <article>
             <label for="faturamento">Qual o faturamento da empresa?</label>
-            <input type="text" name="faturamento">
+            <input type="text" id="faturamento" name="faturamento" placeholder="Digite o faturamento">
+          </article>
+      
+          <section class="checkbox-list">
+            <h3>Tipo de Serviço:</h3>
+            <article>
+              <label><input type="radio" name="servico" value="trafego-pago" required> Tráfego pago</label>
+            </article>
+            <article>
+              <label><input type="radio" name="servico" value="websites"> Desenvolvimento de websites e landing pages</label>
+            </article>
+            <article>
+              <label><input type="radio" name="servico" value="redes-sociais"> Gestão de redes sociais</label>
+            </article>
+            <article>
+              <label><input type="radio" name="servico" value="fotografia"> Gravação profissional com câmera fotográfica</label>
+            </article>
+            <article>
+              <label><input type="radio" name="servico" value="edicao-videos"> Edição de vídeos</label>
+            </article>
+            <article>
+              <label><input type="radio" name="servico" value="video-drone"> Gravação de vídeo com drone</label>
+            </article>
+            <article>
+              <label><input type="radio" name="servico" value="crm"> Implementação de CRM</label>
+            </article>
+          </section>
+      
+          <article>
             <button type="submit">Enviar Formulário</button>
+          </article>
         </form>
-    </section>
+        </section>
+      </section>
+      
 
     </main>
 
