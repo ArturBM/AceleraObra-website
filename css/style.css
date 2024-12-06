@@ -313,7 +313,7 @@ li {
 }
 
 #solucoes #todos-card2 {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
